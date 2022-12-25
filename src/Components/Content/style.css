@@ -1,0 +1,203 @@
+
+.content{
+    width: 94%;
+    margin:auto;
+    display: flex;
+    font-family: 'comic sans ms';
+    background-color: rgb(255, 255, 255,0.8);
+    border-radius: 20px;
+    box-shadow: 
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/*about section*/
+.content img{
+    margin:15%;
+    animation: img_anime 2s ease;
+}
+.about img:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+/*img animation*/
+@keyframes img_anime {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.about,form{
+    width:40%;
+    padding:30px;
+    overflow: hidden;
+}
+.about .brief{
+    margin-bottom: 30px;
+}
+
+/*text animation*/
+.about .brief,.about .services{
+    animation: text_anime 2s ease-in-out backwards;
+}
+@keyframes text_anime {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+    
+}
+
+.about img,.about .brief,.about .services{
+    cursor: pointer;
+}
+
+.about .brief h4 ,.services h4 {
+    font-weight: bold;
+}
+.about .brief p ,.services p,label{
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.container{
+    width: 90%;
+}
+@media (max-width:757px) {
+    .container{
+        width: 98%;
+    }
+    .about .brief p ,.services p{
+        font-size: 16px;
+    }
+
+}
+
+/* form section*/
+form{
+    width:60%;
+}
+@media (max-width:676px) {
+    .content ,form ,.content .about{
+        display: block;
+        width: 96%;
+        padding: 5px;
+        margin: auto;
+    }
+
+}
+
+.name ,.position,.av-date ,.salary ,.birthday ,.address,.email ,.phone ,.status{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: inline-flex;
+}
+
+input[type="text"],input[id='position'],input[type="date"],input[type="tel"],
+input[type="number"],input[id="address"],input[type="email"],select{
+    width: 70%;
+    height: 46px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ddd;
+    background-color: rgb(255, 255, 255,0.8);
+    border-radius: 14px;
+    box-shadow:
+     rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+    rgba(0, 0, 0, 0.07) 0px 2px 4px,
+     rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+    rgba(0, 0, 0, 0.07) 0px 8px 16px,
+     rgba(0, 0, 0, 0.07) 0px 16px 32px,
+      rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+input ,select{
+    animation: input_anime 2s ease forwards;
+}
+
+@keyframes input_anime {
+        0%{
+            transform: translateX(100%);
+        }
+        40%{
+            transform: translateX(-10%);
+        }
+        80%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(-10px);
+        }
+        
+    }
+
+
+input:focus::placeholder {
+    color: transparent;
+  }
+input:hover{
+    margin-left: 5px;
+    margin-top: 3px;
+    transition: all 0.5s ease;
+}
+label{
+    width: 30%;
+    text-align: left;
+    font-weight: 500;
+    padding-right: 20px;
+    cursor: pointer;
+    
+}
+
+input[type="datetime"],select{
+    width: 40%;
+}
+@media (max-width:575px){
+    input{
+        padding: 10px 5px;
+    }
+    label{
+        padding: 5px;
+        width: 30%;
+        font-size: 15px;
+    }
+    input[type="datetime"],select{
+        width: 60%;
+    }
+}
+
+button{
+    padding: 2%;
+    width: 25%;
+    margin:2% 40%;
+    border-radius: 16px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    box-shadow:
+     rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+button:hover{
+    background-color: #fd1a16;
+    color: #fff;
+    transition: all 1.5s ease-in;
+}
+@media (max-width:757px) {
+    button{
+        width: 40%;
+        margin-left: 30%;
+    }
+}
