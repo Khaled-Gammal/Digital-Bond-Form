@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Digital-Bond-Form/static/css/main.93eddd0a.css",
+    "main.css": "/Digital-Bond-Form/static/css/main.9c5885be.css",
     "main.js": "/Digital-Bond-Form/static/js/main.ba02d822.js",
     "static/js/787.c226e533.chunk.js": "/Digital-Bond-Form/static/js/787.c226e533.chunk.js",
     "static/media/pexels-александар-цветановић-1422292.jpg": "/Digital-Bond-Form/static/media/pexels-александар-цветановић-1422292.b5a2eab6c110cee3c4b9.jpg",
     "index.html": "/Digital-Bond-Form/index.html",
-    "main.93eddd0a.css.map": "/Digital-Bond-Form/static/css/main.93eddd0a.css.map",
+    "main.9c5885be.css.map": "/Digital-Bond-Form/static/css/main.9c5885be.css.map",
     "main.ba02d822.js.map": "/Digital-Bond-Form/static/js/main.ba02d822.js.map",
     "787.c226e533.chunk.js.map": "/Digital-Bond-Form/static/js/787.c226e533.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93eddd0a.css",
+    "static/css/main.9c5885be.css",
     "static/js/main.ba02d822.js"
   ]
 }
