@@ -75,7 +75,7 @@
 }
 @media (max-width:757px) {
     .container{
-        width: 98%;
+        width: 100%;
     }
     .about .brief p ,.services p{
         font-size: 16px;
@@ -90,9 +90,12 @@ form{
 @media (max-width:676px) {
     .content ,form ,.content .about{
         display: block;
-        width: 96%;
-        padding: 5px;
+        width: 98%;
+        padding: 0;
         margin: auto;
+    }
+    .content .about{
+        padding: 5px;
     }
 
 }
@@ -107,6 +110,7 @@ form{
 input[type="text"],input[id='position'],input[type="date"],input[type="tel"],
 input[type="number"],input[id="address"],input[type="email"],select{
     width: 70%;
+    margin-left: 1%;
     height: 46px;
     padding: 10px 15px;
     border: none;
@@ -160,19 +164,22 @@ label{
     
 }
 
-input[type="datetime"],select{
+select{
     width: 40%;
 }
 @media (max-width:575px){
     input{
         padding: 10px 5px;
+        width: 60%;
     }
     label{
         padding: 5px;
         width: 30%;
+        margin-right: 12px;
         font-size: 15px;
+        overflow: hidden;
     }
-    input[type="datetime"],select{
+    select{
         width: 60%;
     }
 }
